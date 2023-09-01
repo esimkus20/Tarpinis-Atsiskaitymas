@@ -1,0 +1,235 @@
+.section-1 {
+  @include flex-center;
+  height: 46.5rem;
+  width: 100%;
+  background: url(../../content/bg-masthead.jpg);
+  background-position: center;
+  background-size: cover;
+
+  div {
+    max-width: 65rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+  div h1 {
+    font-size: 3.8rem;
+    color: white;
+    text-align: center;
+  }
+
+  div>div {
+    @include flex-center;
+    flex-direction: row;
+    padding: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  div>div>input {
+    width: 38rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    box-shadow: 0 0 1px black;
+    border: none;
+    margin-right: 10px;
+  }
+
+  div>div>a {
+    color: white;
+    padding: 1rem 3.1rem;
+    border-radius: 5px;
+    background: $blue-color;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+.section-2 {
+  height: 35.5rem;
+  width: 100%;
+  @include flex-center;
+  background: #f8f9fa;
+
+  .container {
+    width: 90rem;
+    height: 31rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .container>div {
+    width: 25rem;
+    font-size: 1.57rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container>div>i {
+    margin-bottom: 1.5rem;
+    color: $blue-color;
+    font-size: 5.5rem;
+  }
+
+  .container>div>h2 {
+    margin-bottom: 1rem;
+  }
+
+  .container>div>p {
+    color: #8c8f91;
+  }
+}
+
+.section-3 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 600px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  div {
+    background: white;
+  }
+
+  h1 {
+    display: flex;
+    align-items: start;
+  }
+
+  .text-box {
+    @include flex-center;
+    padding: 9.1rem;
+  }
+
+  .text-box>div>h1 {
+    display: flex;
+    align-items: flex-end;
+    font-size: 2.48rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-box>div>p {
+    font-size: 1.5rem;
+    color: #8c8f91;
+  }
+
+  .text {
+    flex-direction: column;
+  }
+}
+
+.section-4 {
+  @include flex-center;
+  width: 100%;
+  height: 78.5vh;
+
+  img {
+    width: 270px;
+    border-radius: 50%;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  h1 {
+    @include flex-center;
+    width: 800px;
+    height: 50px;
+    font-size: 45px;
+  }
+
+  .container {
+    @include flex-center;
+    flex-direction: column;
+    width: 70%;
+    height: 75vh;
+  }
+
+  .people {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 500px;
+    width: 125vh;
+    gap: 260px;
+    margin-top: 60px;
+  }
+
+  .people>div {
+    @include flex-center;
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .people>div>p {
+    text-align: center;
+    width: 400px;
+    color: #8c8f91;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .people>div>h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+}
+
+.section-5 {
+  @include flex-center;
+  min-height: 43.5vh;
+  width: 100%;
+  background: url(../../content/bg-masthead.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  div {
+    width: 110vh;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  div h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  div>div {
+    @include flex-center;
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  div>div>input {
+    width: 70vh;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 25px;
+    box-shadow: 0 0 1px black;
+    border: none;
+    margin-right: 10px;
+  }
+
+  div>div>a {
+    color: white;
+    padding: 15px 50px;
+    border-radius: 5px;
+    background: $blue-color;
+    text-decoration: none;
+    font-size: 25px;
+  }
+}

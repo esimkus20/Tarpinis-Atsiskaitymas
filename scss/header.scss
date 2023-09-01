@@ -1,0 +1,36 @@
+header {
+  @include flex-center;
+  position: fixed;
+  width: 100%;
+  line-height: 4.5rem;
+  background: white;
+  top: 0;
+  // z-index: 99;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2rem;
+    width: 90rem;
+    height: 100%;
+  }
+
+  div>.title {
+    font-size: 1.55rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+  }
+
+  .signin {
+    @include flex-center;
+    height: 50px;
+    background: $blue-color;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 5px;
+  }
+}
